@@ -1,4 +1,4 @@
-# Setup CRUD_MEAN_stack_Application(i.e., AngularJS, NodeJs, ExpressJS, MongoDB).
+# Setup CRUD_MEAN_Stack_Application(i.e., AngularJS, NodeJs, ExpressJS, MongoDB).
 
 To setup this basic app you need following 4 things to be installed first on your system:
 
