@@ -1,4 +1,3 @@
-
 angular.module("home", []).config(function($stateProvider) {
     $stateProvider.state('home', {
         url: '/home',
@@ -7,10 +6,11 @@ angular.module("home", []).config(function($stateProvider) {
         
         resolve: {
             data: ['$http', function($http) {
-                  return  $http.get('http://localhost:9090/employeelist');
+                  return  $http.get(config.serverUrl + config.read);
             }]
         }
 });
 }).controller("HomeController", function(data,$scope,$rootScope) {
+    
     $rootScope.record=data.data.data;
 });

@@ -1,31 +1,35 @@
+
+/*Modules required in this application*/
 var express = require('express');
 var app = express();
 var mongoose = require('mongoose');
-
-var port = 9090;
 var jsonfile = require('jsonfile')
 var bodyParser = require('body-parser');
 var fs = require('fs-extra')
+var employeeModule = require('./routes/employeeController.js');
+var methodOverride = require('method-override');
+/*Configuration*/
+config = require('./config.json'); 
+
+
+
+app.use(methodOverride());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 
-var employeeModule = require('./routes/employeeController.js');
-var methodOverride = require('method-override');
-app.use(methodOverride());
 
-
-
+/*mongodb config*/
 mongoose.set('debug', true);
 
+mongoose.connect(config.dbUrl);
 
-mongoose.connect('mongodb://127.0.0.1:27017/dbnode');
-mongoose.connection.on('error', console.error.bind(console, 'connection error:' ));
+mongoose.connection.on('error', console.error.bind(console, 'connection error:'  ));
 
 mongoose.connection.on('connected', function () {
-  console.log('Mongoose default connection open to::>  ' + 'mongodb://127.0.0.1:27017/dbnode' );
+  console.log('Mongoose default connection open to::>  ' + config.dbUrl );
 });
 
-
+/*Cross-Origin-Request */
 app.use(function (req, res, next) {
     var typeOf = false;
     if (req.headers.origin) {
@@ -44,6 +48,7 @@ app.use(function (req, res, next) {
         res.header('Access-Control-Allow-Headers', req.headers['access-control-request-headers']);
         typeOf = true;
     }
+
     // intercept OPTIONS method
     if (typeOf && req.method == 'OPTIONS') {
         res.send(200);
@@ -55,17 +60,9 @@ app.use(function (req, res, next) {
 
 
 
-app.all('/*', function (req, res, next) {
-res.header("Access-Control-Allow-Origin", "*");
-res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-res.header("Access-Control-Allow-Headers", "X-Requested-With");
-res.header("Access-Control-Allow-Headers", "application/json");
-res.header("Access-Control-Allow-Headers", "*/*");
-  next();
-});
-
+/***************************Routes*******************************/
 app.get('/', function(req,res){
-	res.send("Node Server Running on PORT:9090"); 
+	res.send("Node Server Running on PORT:"+config.port); 
 });
 
 app.get('/employeelist', employeeModule.employeeListMethod);
@@ -76,10 +73,8 @@ app.post('/addemployee', employeeModule.employeeAddMethod);
 
 app.delete('/deleteemployee/:_id',employeeModule.employeeDeleteMethod);
 
-
-
-app.listen(port);
-console.log('server started at:  '+port);
+app.listen(config.port);
+console.log('server started at:  '+config.port);
 
 
 

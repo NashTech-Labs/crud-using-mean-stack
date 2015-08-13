@@ -2,6 +2,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
+/*Database Collection Schema*/
  var employeeSchema = mongoose.Schema({
 
     name : { type:String },
@@ -10,30 +11,30 @@ var Schema = mongoose.Schema;
     age : { type:Number }
   });
 
+/*Instance of my collection*/
  var employees = mongoose.model('employees', employeeSchema);
 
+/*Method that fire's Database Queries*/
  module.exports={
-	//get all contents
+	//get all employees
 	employeeList : function(condition, fields, callback){
 		if(!fields)
 			fields = {};
+		
 	employees.find(condition, fields, callback);
 	},
 
-	//update contenet
+	//update employee
 	employeeEdit : function(condition, data, callback){
-		console.log("here");
-		console.log(data)
 		employees.update(condition, data, callback);
 	},
 
-	//save content
+	//save employee
 	employeeAdd : function(data, callback){
-		console.log("data");
-		console.log(data);
 		new employees(data).save(callback);
 	},
 
+	//delete employee
 	employeeDelete :function(condition, callback){
 		employees.remove(condition, callback);
 	},

@@ -9,8 +9,7 @@
                 <th>Age</th>
             </tr>
             <tr >
-               <!--  <td>{{employee._id}}</td>
- -->                <td>{{employee.name}}</td>
+                <td>{{employee.name}}</td>
                 <td>{{employee.occupation}}</td>
                 <td>{{employee.gender}}</td>
                 <td>{{employee.age}}</td>

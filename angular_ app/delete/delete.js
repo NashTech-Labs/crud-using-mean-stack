@@ -1,13 +1,13 @@
 angular.module("delete", []).config(function($stateProvider) {
     $stateProvider.state('deleteEmployee', {
-        url: '/delete/:index',
+        url: '/delete/:_id',
         templateUrl: "delete/delete.tpl",
         controller: "DeleteController"
 
     });
 }).controller("DeleteController", function($scope, AddService, $state,$stateParams,$rootScope) {
 
-    $scope.employee = $rootScope.record[$stateParams.index];
+    $scope.employee = AddService.getById($rootScope.record, $stateParams._id);
     $scope.editMode=false;
 
     $scope.deleteEmployee = function(employee) {
@@ -17,7 +17,7 @@ angular.module("delete", []).config(function($stateProvider) {
         }, function(reject){
             $state.go('home');
         });
-        //$state.go('home');
+        
         
     }
 });

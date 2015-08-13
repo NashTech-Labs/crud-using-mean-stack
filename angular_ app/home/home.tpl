@@ -19,7 +19,6 @@
             </tr>
             <tr  class="animate" ng-repeat="employee in record | filter: searchText "> 
            
-               <!--  <td ng-hide=>{{employee._id}}</td> -->
                 <td>{{employee.name}}</td>
                 <td>{{employee.occupation}}</td>
                 <td>{{employee.gender}}</td>
@@ -28,7 +27,7 @@
                     <input class="btn btn-primary" type="button"  ui-sref="edit({'_id':employee._id})" value="edit" />
                 </td>
                 <td>
-                    <input class="btn btn-danger" type="button" ui-sref="deleteEmployee({'index':$index})" value="Delete" />
+                    <input class="btn btn-danger" type="button" ui-sref="deleteEmployee({'_id':employee._id})" value="Delete" />
                 </td>
             </tr>
         </table>

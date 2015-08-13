@@ -6,11 +6,8 @@ angular.module("add", []).config(function($stateProvider) {
 
     });
 }).controller("AddController", function($scope, AddService, $state) {
-    console.log("Inside Add Controller");
     $scope.employee = {};
-    
     $scope.editMode=false;
-
     $scope.addEmployee = function(employee) {
         AddService.saveEmployee(employee).then(function(resolve){
            
@@ -20,7 +17,7 @@ angular.module("add", []).config(function($stateProvider) {
              $state.go('home');
            
         });
-        // 
+        
     }
 
     

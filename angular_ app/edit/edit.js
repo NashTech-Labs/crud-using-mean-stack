@@ -6,7 +6,7 @@ angular.module("edit", []).config(function($stateProvider) {
 
     });
 }).controller("EditController", function($scope, AddService, $state,$stateParams,$rootScope) {
-    $scope.employee = getById($rootScope.record, $stateParams._id);
+    $scope.employee = AddService.getById($rootScope.record, $stateParams._id);
 
     $scope.editMode=true;
 
@@ -25,12 +25,6 @@ angular.module("edit", []).config(function($stateProvider) {
 });
 
 
-function getById(arr, id) {
-    for (var d = 0, len = arr.length; d < len; d += 1) {
-        if (arr[d]._id === id) {
-            return arr[d];
-        }
-    }
-}
+
 
 
