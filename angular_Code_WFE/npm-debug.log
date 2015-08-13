@@ -1,0 +1,270 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'jitsu', '-g' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.37
+4 verbose node symlink /usr/bin/node
+5 verbose cache add [ 'jitsu', null ]
+6 verbose cache add name=undefined spec="jitsu" args=["jitsu",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'jitsu',
+7 verbose parsed url   path: 'jitsu',
+7 verbose parsed url   href: 'jitsu' }
+8 silly lockFile 9d81e68b-jitsu jitsu
+9 verbose lock jitsu /home/sandy/.npm/9d81e68b-jitsu.lock
+10 silly lockFile 9d81e68b-jitsu jitsu
+11 silly lockFile 9d81e68b-jitsu jitsu
+12 verbose addNamed [ 'jitsu', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile e680b62f-jitsu jitsu@
+15 verbose lock jitsu@ /home/sandy/.npm/e680b62f-jitsu.lock
+16 silly addNameRange { name: 'jitsu', range: '*', hasData: false }
+17 verbose request where is /jitsu
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id 374a809db6eeccab
+20 verbose url raw /jitsu
+21 verbose url resolving [ 'https://registry.npmjs.org/', './jitsu' ]
+22 verbose url resolved https://registry.npmjs.org/jitsu
+23 verbose request where is https://registry.npmjs.org/jitsu
+24 info trying registry request attempt 1 at 02:29:17
+25 http GET https://registry.npmjs.org/jitsu
+26 http 200 https://registry.npmjs.org/jitsu
+27 silly registry.get cb [ 200,
+27 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     etag: '"1O7DLXCKWMJQOKOXHGWJUXZKA"',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     'content-length': '176899',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     date: 'Sat, 08 Aug 2015 20:59:20 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '0',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-sin6921-SIN',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1439067558.587591,VS0,VE1501',
+27 silly registry.get     vary: 'Accept' } ]
+28 silly addNameRange number 2 { name: 'jitsu', range: '*', hasData: true }
+29 silly addNameRange versions [ 'jitsu',
+29 silly addNameRange   [ '0.4.14',
+29 silly addNameRange     '0.4.15',
+29 silly addNameRange     '0.4.16',
+29 silly addNameRange     '0.5.0',
+29 silly addNameRange     '0.5.0-1',
+29 silly addNameRange     '0.6.0',
+29 silly addNameRange     '0.6.1',
+29 silly addNameRange     '0.6.1-1',
+29 silly addNameRange     '0.6.2',
+29 silly addNameRange     '0.6.3',
+29 silly addNameRange     '0.7.0',
+29 silly addNameRange     '0.7.0-1',
+29 silly addNameRange     '0.7.0-2',
+29 silly addNameRange     '0.7.1',
+29 silly addNameRange     '0.7.2',
+29 silly addNameRange     '0.7.2-1',
+29 silly addNameRange     '0.7.3',
+29 silly addNameRange     '0.7.4',
+29 silly addNameRange     '0.7.4-1',
+29 silly addNameRange     '0.7.5',
+29 silly addNameRange     '0.7.6',
+29 silly addNameRange     '0.7.6-1',
+29 silly addNameRange     '0.7.7',
+29 silly addNameRange     '0.7.7-1',
+29 silly addNameRange     '0.7.7-2',
+29 silly addNameRange     '0.7.100',
+29 silly addNameRange     '0.8.0',
+29 silly addNameRange     '0.8.1',
+29 silly addNameRange     '0.8.2',
+29 silly addNameRange     '0.8.2-1',
+29 silly addNameRange     '0.8.3',
+29 silly addNameRange     '0.8.4',
+29 silly addNameRange     '0.8.4-1',
+29 silly addNameRange     '0.8.5',
+29 silly addNameRange     '0.8.5-1',
+29 silly addNameRange     '0.8.6',
+29 silly addNameRange     '0.8.7',
+29 silly addNameRange     '0.8.8',
+29 silly addNameRange     '0.8.9',
+29 silly addNameRange     '0.9.0',
+29 silly addNameRange     '0.9.1',
+29 silly addNameRange     '0.9.2',
+29 silly addNameRange     '0.9.3',
+29 silly addNameRange     '0.9.4',
+29 silly addNameRange     '0.9.5',
+29 silly addNameRange     '0.9.6',
+29 silly addNameRange     '0.9.7',
+29 silly addNameRange     '0.9.8',
+29 silly addNameRange     '0.10.0',
+29 silly addNameRange     '0.10.1',
+29 silly addNameRange     '0.10.2',
+29 silly addNameRange     '0.10.3',
+29 silly addNameRange     '0.10.3-1',
+29 silly addNameRange     '0.10.3-2',
+29 silly addNameRange     '0.10.4',
+29 silly addNameRange     '0.10.5',
+29 silly addNameRange     '0.11.0',
+29 silly addNameRange     '0.11.1',
+29 silly addNameRange     '0.11.2',
+29 silly addNameRange     '0.11.3',
+29 silly addNameRange     '0.11.4',
+29 silly addNameRange     '0.11.5',
+29 silly addNameRange     '0.11.6',
+29 silly addNameRange     '0.11.7',
+29 silly addNameRange     '0.12.0',
+29 silly addNameRange     '0.12.1',
+29 silly addNameRange     '0.12.2',
+29 silly addNameRange     '0.12.3',
+29 silly addNameRange     '0.12.4',
+29 silly addNameRange     '0.12.5',
+29 silly addNameRange     '0.12.6',
+29 silly addNameRange     '0.12.6-1',
+29 silly addNameRange     '0.12.7',
+29 silly addNameRange     '0.12.8',
+29 silly addNameRange     '0.12.9',
+29 silly addNameRange     '0.12.10',
+29 silly addNameRange     '0.12.10-1',
+29 silly addNameRange     '0.12.10-2',
+29 silly addNameRange     '0.12.11',
+29 silly addNameRange     '0.12.12',
+29 silly addNameRange     '0.12.13',
+29 silly addNameRange     '0.12.14',
+29 silly addNameRange     '0.12.15',
+29 silly addNameRange     '0.13.0',
+29 silly addNameRange     '0.13.1',
+29 silly addNameRange     '0.13.2',
+29 silly addNameRange     '0.13.3',
+29 silly addNameRange     '0.13.4',
+29 silly addNameRange     '0.13.5',
+29 silly addNameRange     '0.13.6',
+29 silly addNameRange     '0.13.7',
+29 silly addNameRange     '0.13.8',
+29 silly addNameRange     '0.13.9',
+29 silly addNameRange     '0.13.10',
+29 silly addNameRange     '0.13.11',
+29 silly addNameRange     '0.13.12',
+29 silly addNameRange     '0.13.13',
+29 silly addNameRange     '0.13.14',
+29 silly addNameRange     '0.13.15',
+29 silly addNameRange     '0.13.16',
+29 silly addNameRange     '0.13.17',
+29 silly addNameRange     '0.13.18',
+29 silly addNameRange     '0.14.0',
+29 silly addNameRange     '0.15.0' ] ]
+30 verbose addNamed [ 'jitsu', '0.15.0' ]
+31 verbose addNamed [ '0.15.0', '0.15.0' ]
+32 silly lockFile 24f6ccd6-jitsu-0-15-0 jitsu@0.15.0
+33 verbose lock jitsu@0.15.0 /home/sandy/.npm/24f6ccd6-jitsu-0-15-0.lock
+34 silly lockFile 33f9b04e-npmjs-org-jitsu-jitsu-0-15-0-tgz https://registry.npmjs.org/jitsu/-/jitsu-0.15.0.tgz
+35 verbose lock https://registry.npmjs.org/jitsu/-/jitsu-0.15.0.tgz /home/sandy/.npm/33f9b04e-npmjs-org-jitsu-jitsu-0-15-0-tgz.lock
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/jitsu/-/jitsu-0.15.0.tgz',
+36 verbose addRemoteTarball   '3af6b1f7a0a91680c059ca402feea6bbb0c4b0fb' ]
+37 info retry fetch attempt 1 at 02:29:23
+38 verbose fetch to= /tmp/npm-4768-Wd3c2XPI/registry.npmjs.org/jitsu/-/jitsu-0.15.0.tgz
+39 http GET https://registry.npmjs.org/jitsu/-/jitsu-0.15.0.tgz
+40 http 200 https://registry.npmjs.org/jitsu/-/jitsu-0.15.0.tgz
+41 silly lockFile 33f9b04e-npmjs-org-jitsu-jitsu-0-15-0-tgz https://registry.npmjs.org/jitsu/-/jitsu-0.15.0.tgz
+42 silly lockFile 33f9b04e-npmjs-org-jitsu-jitsu-0-15-0-tgz https://registry.npmjs.org/jitsu/-/jitsu-0.15.0.tgz
+43 silly lockFile 24f6ccd6-jitsu-0-15-0 jitsu@0.15.0
+44 silly lockFile 24f6ccd6-jitsu-0-15-0 jitsu@0.15.0
+45 silly lockFile e680b62f-jitsu jitsu@
+46 silly lockFile e680b62f-jitsu jitsu@
+47 silly resolved [ { name: 'jitsu',
+47 silly resolved     description: 'Flawless command line deployment of Node.js apps to the cloud',
+47 silly resolved     keywords:
+47 silly resolved      [ 'cli',
+47 silly resolved        'nodejitsu',
+47 silly resolved        'cloud hosting',
+47 silly resolved        'platform-as-a-service',
+47 silly resolved        'deployment' ],
+47 silly resolved     version: '0.15.0',
+47 silly resolved     author: { name: 'Nodejitsu Inc.', email: 'info@nodejitsu.com' },
+47 silly resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+47 silly resolved     repository: { type: 'git', url: 'http://github.com/nodejitsu/jitsu.git' },
+47 silly resolved     preferGlobal: true,
+47 silly resolved     dependencies:
+47 silly resolved      { canihaz: '1.0.1',
+47 silly resolved        colors: '0.6.2',
+47 silly resolved        complete: '0.3.1',
+47 silly resolved        dateformat: '1.0.8-1.2.3',
+47 silly resolved        flatiron: '0.3.11',
+47 silly resolved        'flatiron-cli-config': '0.1.4',
+47 silly resolved        'flatiron-cli-users': '0.1.10',
+47 silly resolved        fstream: '0.1.25',
+47 silly resolved        'fstream-npm': '0.1.6',
+47 silly resolved        ladder: '0.0.1',
+47 silly resolved        'nodejitsu-api': '0.6.4',
+47 silly resolved        opener: '1.4.x',
+47 silly resolved        pkginfo: '0.3.0',
+47 silly resolved        progress: '0.1.0',
+47 silly resolved        request: '2.42.0',
+47 silly resolved        'require-analyzer': '0.5.0',
+47 silly resolved        'spawn-command': '0.0.2',
+47 silly resolved        semver: '1.0.14',
+47 silly resolved        tar: '0.1.18',
+47 silly resolved        wizard: '0.0.1' },
+47 silly resolved     canihaz: { npm: '1.3.15' },
+47 silly resolved     devDependencies: { nock: '0.46.x', vows: '0.7.x' },
+47 silly resolved     bin: { jitsu: './bin/jitsu' },
+47 silly resolved     main: './lib/jitsu',
+47 silly resolved     scripts: { test: 'vows test/commands/*-test.js test/lib/*-test.js --spec -i' },
+47 silly resolved     engines: { node: '>= 0.6.0' },
+47 silly resolved     license: 'MIT',
+47 silly resolved     gitHead: 'b4a40605cb5b888ff13fc0b0f1cfa252ad0dd917',
+47 silly resolved     bugs: { url: 'https://github.com/nodejitsu/jitsu/issues' },
+47 silly resolved     homepage: 'https://github.com/nodejitsu/jitsu',
+47 silly resolved     _id: 'jitsu@0.15.0',
+47 silly resolved     _shasum: '3af6b1f7a0a91680c059ca402feea6bbb0c4b0fb',
+47 silly resolved     _from: 'jitsu@',
+47 silly resolved     _npmVersion: '1.4.23',
+47 silly resolved     _npmUser: { name: 'swaagie', email: 'info@martijnswaagman.nl' },
+47 silly resolved     dist:
+47 silly resolved      { shasum: '3af6b1f7a0a91680c059ca402feea6bbb0c4b0fb',
+47 silly resolved        tarball: 'http://registry.npmjs.org/jitsu/-/jitsu-0.15.0.tgz' },
+47 silly resolved     directories: {},
+47 silly resolved     _resolved: 'https://registry.npmjs.org/jitsu/-/jitsu-0.15.0.tgz' } ]
+48 info install jitsu@0.15.0 into /usr/lib
+49 info installOne jitsu@0.15.0
+50 verbose lib/node_modules/jitsu unbuild
+51 verbose tar unpack /home/sandy/.npm/jitsu/0.15.0/package.tgz
+52 silly lockFile 8d13d375-tar-usr-lib-node-modules-jitsu tar:///usr/lib/node_modules/jitsu
+53 verbose lock tar:///usr/lib/node_modules/jitsu /home/sandy/.npm/8d13d375-tar-usr-lib-node-modules-jitsu.lock
+54 silly lockFile f0fc3ba5-ndy-npm-jitsu-0-15-0-package-tgz tar:///home/sandy/.npm/jitsu/0.15.0/package.tgz
+55 verbose lock tar:///home/sandy/.npm/jitsu/0.15.0/package.tgz /home/sandy/.npm/f0fc3ba5-ndy-npm-jitsu-0-15-0-package-tgz.lock
+56 silly gunzTarPerm modes [ '775', '664' ]
+57 error Error: EACCES, mkdir '/usr/lib/node_modules/jitsu'
+57 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/jitsu']
+57 error   errno: 3,
+57 error   code: 'EACCES',
+57 error   path: '/usr/lib/node_modules/jitsu',
+57 error   fstream_type: 'Directory',
+57 error   fstream_path: '/usr/lib/node_modules/jitsu',
+57 error   fstream_class: 'DirWriter',
+57 error   fstream_stack:
+57 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+57 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+57 error      'Object.oncomplete (fs.js:108:15)' ] }
+58 error Please try running this command again as root/Administrator.
+59 error System Linux 3.5.0-44-generic
+60 error command "/usr/bin/node" "/usr/bin/npm" "install" "jitsu" "-g"
+61 error cwd /home/sandy/Desktop/angular tranning/sumit app
+62 error node -v v0.10.37
+63 error npm -v 1.4.28
+64 error path /usr/lib/node_modules/jitsu
+65 error fstream_path /usr/lib/node_modules/jitsu
+66 error fstream_type Directory
+67 error fstream_class DirWriter
+68 error code EACCES
+69 error errno 3
+70 error stack Error: EACCES, mkdir '/usr/lib/node_modules/jitsu'
+71 error fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+71 error fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+71 error fstream_stack Object.oncomplete (fs.js:108:15)
+72 verbose exit [ 3, true ]

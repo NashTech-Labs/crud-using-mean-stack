@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <script type="text/javascript" src="libs/0angular.js"></script>
+    <script type="text/javascript" src="libs/1angular-ui-router.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="home/home.js"></script>
+    <script type="text/javascript" src="add/add.js"></script>
+    <script type="text/javascript" src="add/add-service.js"></script>
+    <script type="text/javascript" src="edit/edit.js"></script>
+    <title></title>
+</head>
+
+<body ng-controller="IndexController">
+    <div>
+        <span ui-sref="add">Add</span>
+    </div>
+    <div ui-sref="home"> show table</div>
+    <div ui-view>
+    </div>
+</body>
+
+</html>
