@@ -1,4 +1,4 @@
-# How to setup CRUD_MEAN_stack_Application(i.e., AngularJS, NodeJs, ExpressJS, MongoDB).
+# Setup CRUD_MEAN_stack_Application(i.e., AngularJS, NodeJs, ExpressJS, MongoDB).
 
 To setup this basic app you need following 4 things to be installed first on your system:
 
@@ -9,13 +9,21 @@ To setup this basic app you need following 4 things to be installed first on you
 	 # Download Link: (https://nodejs.org/download/).
 	 
 3> ExpressJS
-	 # Its a framework for NodeJS, After installing NodeJS you can simply install it by typing follwing command.
+	 # Its a framework for NodeJS, After installing NodeJS you can simply install it by typing follwing 			   command.
 	 # you can install it globally as well as locally where project folder exist.
 	 # it will automatically create a folder node_modules and inside you will find express framework.
 	 # Download Command: (npm install express).
 	 
 4> AngularJS
+	 # you can use stable as well as legacy version of AngularJS Script.
 	 # Download Link: https://angularjs.org/
+	 
+	 
+	 
+	 
+	 
+	 
+	 
 
 
 
