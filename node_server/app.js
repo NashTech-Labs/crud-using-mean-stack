@@ -12,7 +12,7 @@ var methodOverride = require('method-override');
 config = require('./config.json'); 
 
 
-
+app.use(express.static('public'));
 app.use(methodOverride());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
@@ -62,8 +62,9 @@ app.use(function (req, res, next) {
 
 /***************************Routes*******************************/
 app.get('/', function(req,res){
-	res.send("Hi the server is started: "+config.port);
+	 res.sendfile('./views/server.html');
 });
+
 app.get('/employeelist', employeeModule.employeeListMethod);
 
 app.post('/editemployee', employeeModule.employeeEditMethod);
