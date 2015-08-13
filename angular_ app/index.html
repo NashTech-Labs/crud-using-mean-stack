@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <link rel="stylesheet" href="stylesheet/ngAnimation.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="stylesheet/custom.css">
+    <script src="bootstrap/jquery.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="libs/0angular.js"></script>
+    <script type="text/javascript" src="libs/1angular-ui-router.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="home/home.js"></script>
+    <script type="text/javascript" src="add/add.js"></script>
+    <script type="text/javascript" src="add/add-service.js"></script>
+    <script type="text/javascript" src="edit/edit.js"></script>
+    <script type="text/javascript" src="delete/delete.js"></script>
+    <title></title>
+</head>
+
+<body ng-controller="IndexController">
+                <div class = "container-fluid">
+                <div class="row" ><h2 style = "margin-left:35%;">KnolX MEAN Crud Demo </h2></div>
+                    <div class="container custom_background" ui-view>
+                    </div>
+                </div>
+</body>
+
+</html>

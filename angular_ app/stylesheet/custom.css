@@ -1,0 +1,15 @@
+td, th {
+	padding: 5px;
+}
+
+.custom_background {
+	background-color: #eee;
+	border: black 1px solid;
+	padding: 18px;
+	margin-top: 60px;
+}
+
+.searchBar {
+	float: right;
+	margin: 12px 14px 0px;
+}
