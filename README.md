@@ -3,7 +3,7 @@
 To setup this basic app you need following 4 things to be installed first on your system:
 
 1> MongoDB 
-   # Download Link: (https://www.mongodb.org/downloads).
+         # Download Link: (https://www.mongodb.org/downloads).
 
 2> NodeJS
 	 # Download Link: (https://nodejs.org/download/).
@@ -17,6 +17,12 @@ To setup this basic app you need following 4 things to be installed first on you
 4> AngularJS
 	 # you can use stable as well as legacy version of AngularJS Script.
 	 # Download Link: https://angularjs.org/
+	 
+5> Robomongo (optional)
+	# Download Link (http://robomongo.org/)
+	# This is an additional software for your mongoDB.
+	# This will provide you a GUI interface over mongoDB.
+
 	 
 	 
 	 
